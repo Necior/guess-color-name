@@ -10,3 +10,8 @@ A Python library which guesses color name. Compatible with Python 2 and 3.
 (64.69157595854347, 'shark lighter blue')
 >>>
 ```
+
+## Notes
+
+* It's just a proof of concept inspired by the idea of machine learning.
+* I'm aware of possibility of optimizing the algorithm (by using _k_-d tree maybe?).
