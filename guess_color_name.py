@@ -26,7 +26,7 @@ def distance(rgb1, rgb2):
   return ((rgb1[0]-rgb2[0])**2 + (rgb1[1]-rgb2[1])**2 + (rgb1[2]-rgb2[2])**2)**0.5
 
 def guessColorName(nameMe, debug=0):
-  """Return guessed human-name of a color.
+  """Return a tuple (distance, guessed human-name of a color).
   
   Keyword arguments:
   debug -- print debug messages if not 0 (default 0)
