@@ -31,18 +31,10 @@ def guessColorName(nameMe, debug=0):
   Keyword arguments:
   debug -- print debug messages if not 0 (default 0)
   """
-  result = (distance(nameMe, colors[0]), colors[0][3])
-  
-  for color in colors:
-    dist = distance(nameMe, color)
-    if debug:
-      print("\t" + str(dist) + " to " + color[3])
-    if dist < result[0]:
-      result = (dist, color[3])
-  return result
+  return min(colors, key=lambda x: distance(nameMe, x))
 
 def main():
-  print(guessColorName((227, 155, 239), debug=1)[1])
+  print(guessColorName((227, 155, 239), debug=1)[3])
 
 if __name__ == '__main__':
   main()
