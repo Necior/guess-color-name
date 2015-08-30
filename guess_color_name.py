@@ -22,8 +22,8 @@ colors = [ # names from colourlovers.com
 
 
 def distance(rgb1, rgb2):
-  """Return distance in 3D space of RGB colors."""
-  return ((rgb1[0]-rgb2[0])**2 + (rgb1[1]-rgb2[1])**2 + (rgb1[2]-rgb2[2])**2)**0.5
+  """Return quasi-distance in 3D space of RGB colors."""
+  return (rgb1[0]-rgb2[0])**2 + (rgb1[1]-rgb2[1])**2 + (rgb1[2]-rgb2[2])
 
 def guessColorName(nameMe):
   """Return a tuple (distance, guessed human-name of a color)."""
