@@ -25,16 +25,12 @@ def distance(rgb1, rgb2):
   """Return distance in 3D space of RGB colors."""
   return ((rgb1[0]-rgb2[0])**2 + (rgb1[1]-rgb2[1])**2 + (rgb1[2]-rgb2[2])**2)**0.5
 
-def guessColorName(nameMe, debug=0):
-  """Return a tuple (distance, guessed human-name of a color).
-  
-  Keyword arguments:
-  debug -- print debug messages if not 0 (default 0)
-  """
+def guessColorName(nameMe):
+  """Return a tuple (distance, guessed human-name of a color)."""
   return min(colors, key=lambda x: distance(nameMe, x))
 
 def main():
-  print(guessColorName((227, 155, 239), debug=1)[3])
+  print(guessColorName((227, 155, 239))[3])
 
 if __name__ == '__main__':
   main()
