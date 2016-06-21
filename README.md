@@ -2,6 +2,8 @@
 
 A Python library which guesses color name. Compatible with Python 2 and 3.
 
+All it does is selecting the nearest neighbour in RGB space.
+
 ## Usage
 ```
 >>> import guess_color_name as colors
